@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+<head>
+<title>사이트에 들어오신걸 환영합니다.</title>
+
+<script language="javascript">
+
+
+
+
+</script>
+
+
+<style>
+ #df-container {
+   width: 940px;
+   margin: 0px auto; <!-- 마진은 보더를 기준으로 바깥에 위치 -->;
+   padding : 10px; <!-- padding은 보더를 기준으로 안쪽에 위치, 더 넓음 -->;
+   border : 1px solid #bcbcbc;
+   background-color: #E6E6E6;
+ }
+ #df-header {
+   padding: 20px;
+   margin-bottom: 20;
+   border: 1px solid #bcbcbc;
+ }
+#df-content {
+  width: 650px;
+  height: 550px;
+  padding: 10px;
+  margin-bottom: 20px;
+  float: left;            <!-- 좌측으로정렬 -->;
+  border: 1px solid #bcbcbc;
+
+}
+#df-sidebar {
+  width: 220px;
+  height: 540px;
+  padding: 15px;
+  margin-bottom: 20px;
+  float: right;
+  border: 1px solid #bcbcbc;
+}
+
+
+
+#df-footer {
+        clear: both; <!-- 사진이나 다른거 주위에 붙지 않게 하기 -->
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+
+#topMenu {
+  height: 40px;
+  width: 900px;
+}
+#topMenu ul li {
+  list-style: none;
+  color: white;
+  background-color: #2d2d2d;
+  float: left;
+  line-height: 30px;
+  vertical-align: meddle;
+  text-align: center;
+
+}
+#topMenu .menuLink {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Dotum, Arial;
+}
+#topMenu .menuLink:hover {
+  color: red;
+  background-color: #4d4d4d;
+}
+
+#df-login {
+  width : 220px;
+  height: 140px;
+  padding : 0px;
+  margin-bottom: 10px;
+  float: right;
+  border : 1px solid #4d4d4d;
+}
+
+.iframe100 {
+  display: block;
+  border : none;
+  height: 100vh;
+  width: 100vwh;
+  
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+<div id="df-container">
+  <div id="df-header">
+    <img src="bang1_1.jpg" width=100% height=100%>
+    <nav id="topMenu">
+      <ul>
+        <li><a class="menuLink" href="default.htm">Main</a></li>
+        <li><a class="menuLink" href="board_li.asp" target="df-content">게시판</a></li>
+        <li><a class="menuLink" href="index.html" target="df-content">채팅</a></li>
+        <li><a class="menuLink" href="Calculator.html" target="df-content">계산기</a></li>
+        <li><a class="menuLink" href="regit_info.asp" target="df-content">회원검색</a></li>
+        <li><a class="menuLink" href="guest_book.asp" target="df-content">방명록</a></li>
+        <li><a class="menuLink" href="form_mo.html" target="df-content">메일(미완성)</a></li>
+        <li><a class="menuLink" href="home.html" target="_blank">과제 및 참고</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+<div id="df-sidebar">
+  <center>
+  <br>
+   <iframe width= 100%  height=100% frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no vspace=0 src="side.html"></center></iframe>
+
+</div>
+
+<div id="df-content">
+  <center>
+    <br>
+   <iframe name="df-content" class="iframe100" width=100% height=100% frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=no vspace=0></center></iframe>
+</div>
+
+
+<div id="df-footer">
+ <img src="bang3.jpg" width=100% height=130px>
+</div>
+</div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5cf2cce8267b2e5785307ca5/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>

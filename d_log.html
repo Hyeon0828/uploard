@@ -1,0 +1,73 @@
+<html>
+<body>
+<script language="javascript">
+function nospace() {
+if(event.keycode==32) {
+  event.returnvalue=false;
+}
+}
+
+function winopen()
+{
+window.open('SignUp.html', 'new', 'width=600px,height=800px,top=100px,left=100px, status=no, scrollbars=auto, location=no');
+}
+
+function search1()
+{
+window.open('find_id.asp', 'find', 'width=500px, height=200px, status=no, crollbars=auto, location=no');
+}
+
+
+function login() {
+  if(frm_log.login_id.value.length<4) {
+  alert("ID를 4자리 이상 입력해주세요.");
+  document.frm_log.login_id.focus();
+  return;
+  }
+  else if(frm_log.login_pw.value.length <7) {
+    alert("비번을 7자리 이상 입력해주세요.");
+    document.frm_log.login_pw.focus();
+    return;
+  }
+  else {
+    frm_log.submit();
+  }
+}
+
+
+
+</script>
+<table>
+<form name="frm_log" action="login.asp" method="post">
+ <table>
+   <table border="1" >
+   <tr>
+   <td>ID</td>
+   <td>
+     <input type="text" name="login_id" m size="10" autofocus tabindex="1">
+   </td>
+
+   <td rowspan="2"> <!--rowspan는 로그인창 합치기 위해 넣음-->
+     <button type="button" class="btn btn-primary" style="width:100%; height:50px;" onclick="login();">로그인</button>
+     </td> <!--btn btn-primary는 버튼 디자인을 해주기 위해 넣음-->
+
+   <tr>
+     <td>PW</td>
+     <td><input type="password" name="login_pw" size="10" tabindex="2"></td>
+   </tr>
+   </tr>
+
+
+   <td colspan="3">
+   <button type="button" class="btn btn-primary" onclick="winopen();" style="width: 100%; margin-button:2px;"/>회원가입</button>
+   </td>
+
+   <tr>
+   <td colspan="3">
+   <button type="button" class="btn btn-primary" onclick="search1();" style="width: 100%; margin-button:1px;"/>ID, PW찾기</button>
+   </td>
+
+</table>
+</form>
+</body>
+</html>
